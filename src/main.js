@@ -50,7 +50,7 @@ function PropertyCard(props) {
 	return (
 		<div class="col-4">
 			<div class="rounded-3 p-0 overflow-hidden bg-white">
-				<img class="img-fluid" src={props.imgUrl} />
+				<img class="img-fluid" src={props.imgUrl} alt="property image" />
 				<div class="p-1 py-3">
 					<div class="row border-bottom m-0 text-start py-2 position-relative">
 						<div class="position-absolute" style={{left: "76%"}}>
@@ -86,7 +86,7 @@ function MainSection(props) {
 		type: "All",
 	});
 
-	const filteredData = data.filter((item) => (!filterKeys.location || item.address.toLowerCase().includes(filterKeys.location.toLowerCase())) && (!filterKeys.range || item.price <= filterKeys.range) && (filterKeys.type == "All" || item.type == filterKeys.type));
+	const filteredData = data.filter((item) => (!filterKeys.location || item.address.toLowerCase().includes(filterKeys.location.toLowerCase())) && (!filterKeys.range || item.price <= filterKeys.range) && (filterKeys.type === "All" || item.type === filterKeys.type));
 
 	return (
 		<section style={{padding: "0 13vw"}} class="mb-5">
