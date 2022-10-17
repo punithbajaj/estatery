@@ -32,7 +32,7 @@ const data = [
 		price: 1456,
 		address: " Clark Street Clinton, MD 20735",
 		imgUrl: "https://cdn.pixabay.com/photo/2016/11/29/12/13/fence-1869401_960_720.jpg",
-		type: "Houses",
+		type: "Flat",
 	},
 	{
 		location: "Palm Harbour",

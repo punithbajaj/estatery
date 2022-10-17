@@ -80,7 +80,7 @@ function PropertyCard(props) {
 
 function MainSection(props) {
 	const [filterKeys, setFilterKeys] = useState({
-		location: "gre",
+		location: "",
 		date: "",
 		range: 0,
 		type: "All",
